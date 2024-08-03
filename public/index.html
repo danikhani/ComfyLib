@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-232ZE9NWG4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-232ZE9NWG4');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litegraph.js Integration</title>
+    <link rel="stylesheet" href="css/litegraph.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module">
+        import { app } from "./js/register_unknown.js";
+        await app.setup();
+        window.app = app;
+        window.graph = app.graph;
+    </script>
+</head>
+
+<body>
+    <button id="exportGraph">Export Graph</button>
+    <input type="file" id="importGraph" accept=".json">
+    <!-- <canvas id="mygraph"></canvas> -->
+    
+    <script src="lib/litegraph.js"></script>
+    <!-- <script src="js/litegraph-setup.js"></script> -->
+</body>
+
+
+</html>
+
+
